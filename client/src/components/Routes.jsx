@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from '../redux/store';
-import Layout from './Layout/Layout';
+import Layout from './Layout';
 
 const Routes = () => (
   <Provider store={store}>

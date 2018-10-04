@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import {coins} from './coinReducer';
+import {categories} from './categories';
 
-const index = combineReducers({coins});
+const index = combineReducers({categories});
 export default index;

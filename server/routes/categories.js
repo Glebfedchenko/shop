@@ -8,6 +8,7 @@ router.route('/').post(categoryCtrl.addCategory);
 router.route('/').get(categoryCtrl.getAllCategories);
 router.route('/:id').get(categoryCtrl.getCategoryById);
 
+router.route('/:id/subcategory').get(subcategoryCtrl.getAllSubcategories);
 router.route('/:id/subcategory').post(subcategoryCtrl.addSubcategory);
 router.route('/:id/subcategory/:id').get(subcategoryCtrl.getSubcategoryById);
 module.exports = router;
