@@ -28,20 +28,57 @@ a {
   }
 }
 
+/*START LAYOUT*/
+.main-wrapper{
+  min-height: 100vh;
+  position: relative;
+}
 
 /*HEADER*/
 .header{
   background-color: #000;
-
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
   a {
     color: #fff;
+    &:hover, &:active, &:focus{
+      text-decoration: none;
+      outline: 0;
+    }
+  }
+  
+  &__homelink{
+    text-align: center;
+  }
+  &__register{
+    font-size: 24px;
+    text-transform: uppercase;
   }
 }
+/*FOOTER*/
+.footer{
+  height: 100px;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
+}
 
+/*END LAYOUT*/
 
-
-
-
+/*HOME*/
+.home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
 
 
 
